@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="conatiner-sm">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="logo" style="height: 70px; width:200px;">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times fa-2x" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa fa-bars fa-3" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span> Sandhya devi </span><br>from Erode</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container-sm">
+            <div class="row">
+                <div class="about-col">
+                    <h1 calss="title">About Me</h1>
+                    <p class="para" style="font-size: 20px;color:tan"><span style="padding-left: 100px;">Started</span>
+                        my career as a test supporter. But I'm
+                        always
+                        thrived
+                        to be a
+                        developer. Expecting an opportunity to become a developer and to deliver
+                        the best out of me so that I can satisfy my dream and through that benefits
+                        the organization.Capable of rapidly and effectively grasping new concepts. I'm a Team-player who
+                        can also work independently and has excellent verbal and
+                        written communication skills.
+                    </p>
+                    <div class="titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><i class="fa fa-html5 fa-2x" aria-hidden="true"> <span>HTML</span></i></li>
+                            <li><i class="fa fa-css3 fa-2x" aria-hidden="true"><span>CSS</span></i></li>
+                            <li><img src="https://th.bing.com/th/id/OIP.QOsYLkUqvAWbPydcIVR02AAAAA?pid=ImgDet&w=300&h=300&rs=1"
+                                    alt=""><span>BOOTSTRAP</span></li>
+                            <li><img src="https://cdn-icons-png.flaticon.com/128/1199/1199124.png"
+                                    alt=""><span>Javascript</span></li>
+                            <li><img src="https://learn.polytechnic.bh/wp-content/uploads/sites/7/2021/03/Java-icon_Java-icon.jpg"
+                                    alt="" width="50px"><span>Java</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Software Engineer at Cognizant Technology Solutions</li>
+                            <li><span>Professional Skills</span><br>
+                                <ol>
+                                    <li> Experience in automating Mainframe
+                                        jobs using
+                                        JCl,REXX </li>
+                                    <li>Create weekly status reports and attend status meetings on weekly
+                                        basis with Client/Manager
+                                    </li>Knowledge to explain the process or problem facing to
+                                    the client fluently.
+                                </ol>
+                            </li>
+                            <li><span>PROJECT UNDERTAKEN</span> </li>
+                            <li> Project Name: Humana Health care </li>
+                            <li> Roles and Responsibilities </li>
+                            <ol>
+                                <li>The project aim was to run the batch jobs for more than 300
+                                    cycles,report and resolve the abends and create defects to fix the abends and
+                                    interact with
+                                    client for ever issue</li>
+                                <li>Involved in monitoring and report the workflows failure in Informatica. </li>
+                                <li> Track the abends or errors daily for all the application and took the yearly
+                                    abends.</li>
+                            </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2017-2020</span><br> B.Sc Information systems in Kongu Engineering College</li>
+                            <li><span>2016-2017</span><br> HSLC in Kongu Vellalr Matric.Hr.Sec.School</li>
+                            <li><span>2014-2015</span><br> SSLC in Government Girls HR.SEC.School</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contactme">Contact Me</h1>
+                    <p><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        sandhya021999@gmail.com</p>
+                    <p><i class="fa fa-phone fa-1x" aria-hidden="true"></i>8098807224</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sandhya-devi-5a2781187"><i class="fa fa-linkedin fa-2x"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <a href="images/doc.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
